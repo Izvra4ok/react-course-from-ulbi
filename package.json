@@ -2,7 +2,7 @@
   "name": "react-course-from-ulbi",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://izvra4ok.github.io/React-course/",
+  "homepage": "https://izvra4ok.github.io/react-course-from-ulbi/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
