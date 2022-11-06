@@ -1,7 +1,7 @@
 import React, {useEffect, useRef, useState} from 'react';
 import "../../../styles/App.css";
-import {usePosts} from "../../../hooks/usePosts";
-import {useFetching} from "../../../hooks/useFetching";
+import {usePosts} from "../../../hooks/Lesson1/usePosts";
+import {useFetching} from "../../../hooks/Lesson1/useFetching";
 import PostService from "../../../DAL/api";
 import {getPagesCount} from "../../../utils/pages";
 import PostForm from "../../../components/UI/Post/PostForm";
@@ -10,7 +10,7 @@ import MyModal from "../../../components/UI/MyModal/MyModal";
 import PostFilter from "../../../components/UI/Post/PostFilter";
 import Preloader from "../../../components/UI/Preloader/Preloader";
 import PostList from "../../../components/UI/Post/PostList";
-import {useObserver} from "../../../hooks/useObserver";
+import {useObserver} from "../../../hooks/Lesson1/useObserver";
 import MySelect from "../../../components/UI/Select/MySelect";
 
 const Posts = () => {

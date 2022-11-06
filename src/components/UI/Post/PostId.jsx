@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import {useParams} from "react-router-dom";
-import {useFetching} from "../../../hooks/useFetching";
+import {useFetching} from "../../../hooks/Lesson1/useFetching";
 import PostService from "../../../DAL/api";
 import Preloader from "../Preloader/Preloader";
 import classes from "../../../pages/Lesson1Router/Posts/Posts.module.css";
