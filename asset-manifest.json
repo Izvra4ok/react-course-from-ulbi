@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/react-course-from-ulbi/static/css/main.ba071261.css",
-    "main.js": "/react-course-from-ulbi/static/js/main.9075b159.js",
+    "main.css": "/react-course-from-ulbi/static/css/main.bddf4887.css",
+    "main.js": "/react-course-from-ulbi/static/js/main.478cac1a.js",
     "index.html": "/react-course-from-ulbi/index.html",
-    "main.ba071261.css.map": "/react-course-from-ulbi/static/css/main.ba071261.css.map",
-    "main.9075b159.js.map": "/react-course-from-ulbi/static/js/main.9075b159.js.map"
+    "main.bddf4887.css.map": "/react-course-from-ulbi/static/css/main.bddf4887.css.map",
+    "main.478cac1a.js.map": "/react-course-from-ulbi/static/js/main.478cac1a.js.map"
   },
   "entrypoints": [
-    "static/css/main.ba071261.css",
-    "static/js/main.9075b159.js"
+    "static/css/main.bddf4887.css",
+    "static/js/main.478cac1a.js"
   ]
 }
