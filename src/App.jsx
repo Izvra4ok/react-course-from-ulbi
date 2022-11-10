@@ -1,9 +1,9 @@
 import React, {useEffect, useState} from "react";
 import {BrowserRouter} from "react-router-dom";
 import AppRouter from "./routes/AppRouter";
-import {AuthContext} from "./context";
+import {AuthContext} from "./Lesson1/context";
 import "./styles/App.css";
-import Navbar from "./components/UI/NavBar/Navbar";
+import Navbar from "./Lesson1/components/UI/NavBar/Navbar";
 
 
 const App = () => {

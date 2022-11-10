@@ -1,8 +1,8 @@
 import React, {useContext} from "react";
 import {Route, Routes} from "react-router-dom";
 import {privateRoutes, publicRoutes} from "./routes";
-import {AuthContext} from "../context";
-import Preloader from "../components/UI/Preloader/Preloader";
+import {AuthContext} from "../Lesson1/context";
+import Preloader from "../Lesson1/components/UI/Preloader/Preloader";
 
 
 const AppRouter = () => {
