@@ -1,5 +1,5 @@
 import React, {useContext, useState} from 'react';
-import {AuthFirebaseContext} from "../../pages/Lesson3Main";
+import {AuthFirebaseContext} from "../../pages/Lesson3Router";
 import {useAuthState} from "react-firebase-hooks/auth";
 import {Avatar, Button, Container, Grid, TextField} from "@mui/material";
 import {useCollectionData} from "react-firebase-hooks/firestore";
@@ -54,7 +54,7 @@ const ChatLesson3 = () => {
 
                             <hr style={{  border: user.uid === message.uid ? "1px solid green" : "1px solid blue"}}/>
 
-                            <div style={{margin:"0 10px 0 10px"}}>{message.text}</div>
+                            <div style={{margin:"0 10px 0 10px",padding:"10px"}}>{message.text}</div>
                         </div>
                     )}
                 </div>

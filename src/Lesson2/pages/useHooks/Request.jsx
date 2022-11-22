@@ -7,7 +7,7 @@ const Request = () => {
 
     const [todos, loading, error] = useRequest(fetchTodos);
 
-    async function fetchTodos(query) {
+    async function fetchTodos() {
         return await axios.get(`https://jsonplaceholder.typicode.com/todos`)
     }
 
@@ -15,7 +15,7 @@ const Request = () => {
         return <h2>Loading...</h2>
     }
     if (error) {
-        return <h2>Error</h2>
+        return <h2>Error...{error}</h2>
     }
 
     return (

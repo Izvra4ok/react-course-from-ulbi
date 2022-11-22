@@ -1,6 +1,6 @@
 import React, {useContext} from 'react';
 import {Box, Button, Container, Grid} from "@mui/material";
-import {AuthFirebaseContext} from "../../pages/Lesson3Main";
+import {AuthFirebaseContext} from "../../pages/Lesson3Router";
 import firebase from 'firebase/compat/app';
 // import firebase from 'firebase';
 import 'firebase/compat/auth';

@@ -1,0 +1,26 @@
+@import "./src/Lesson4/styles/variable.module";
+
+.toolBar {
+  height: $toolbar-height;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.07);
+  box-shadow: 0 4px 5px gray;
+
+
+  &__btn {
+    height: 25px;
+    width: 25px;
+    margin: 0 16px;
+    cursor: pointer;
+    border: none;
+    background-size: cover;
+  }
+}
+
+.brush, .circle, .eraser, .line, .rainbow,.undo,.redo,.save {
+  background: white;
+  border: none;
+}

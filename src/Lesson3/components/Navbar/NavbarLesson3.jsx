@@ -2,7 +2,7 @@ import React from 'react';
 import {AppBar, Button, Grid, Toolbar} from "@mui/material";
 import {NavLink} from "react-router-dom";
 import {useContext} from "react";
-import {AuthFirebaseContext} from "../../pages/Lesson3Main";
+import {AuthFirebaseContext} from "../../pages/Lesson3Router";
 import {useAuthState} from "react-firebase-hooks/auth";
 
 

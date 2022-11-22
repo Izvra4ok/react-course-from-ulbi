@@ -1,14 +1,15 @@
 import React, {useState} from 'react';
 import axios from "axios";
 import {useDebounced} from "../../hooks/useDebounced";
+import Preloader from "../../../Lesson1/components/Preloader/Preloader";
 
 const Search = () => {
 
     const [value, setValue] = useState("");
-    const debouncedSearch  = useDebounced(search,500)
+    const debouncedSearch  = useDebounced(search,2500)
 
     async function search(query) {
-        const response = await axios.get(`https://jsonplaceholder.typicode.com/todos?query=` + query)
+        return await axios.get(`https://jsonplaceholder.typicode.com/todos?query=` + query)
     }
 
     const onChange = (e) => {
@@ -16,8 +17,10 @@ const Search = () => {
         debouncedSearch(e.target.value)
     }
 
+
     return (
         <div>
+
             <h2>{value}</h2>
             <input type="text"
                    value={value}

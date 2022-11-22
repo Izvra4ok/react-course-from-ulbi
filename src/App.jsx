@@ -3,7 +3,7 @@ import {BrowserRouter} from "react-router-dom";
 import AppRouter from "./routes/AppRouter";
 import {AuthContext} from "./Lesson1/context";
 import "./styles/App.css";
-import Navbar from "./Lesson1/components/UI/NavBar/Navbar";
+import Navbar from "./Lesson1/components/NavBar/Navbar";
 
 
 const App = () => {
@@ -20,8 +20,8 @@ const App = () => {
 
     return <BrowserRouter>
         <div className={"App"}>
-
             <AuthContext.Provider value={{isAuth, setIsAuth,isLoadingApp}}>
+
                 <Navbar/>
                 <AppRouter/>
 

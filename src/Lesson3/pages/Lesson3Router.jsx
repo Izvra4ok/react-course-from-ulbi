@@ -1,47 +1,36 @@
-import React, {useContext} from 'react';
-import classes from "./Lesson3Router.module.css";
-import {Route, Routes} from "react-router-dom";
-import NavbarLesson3 from "../components/Navbar/NavbarLesson3";
-import {privateRoutes, publicRoutes} from "../routesLesson3";
-import {AuthFirebaseContext} from "./Lesson3Main";
-import {useAuthState} from "react-firebase-hooks/auth";
-import Preloader from "../components/Preloader/Preloader";
+import React, {createContext} from 'react';
+
+import firebase from 'firebase/compat/app';
+import 'firebase/compat/auth';
+import 'firebase/compat/firestore';
+import Lesson3 from "../components/Lesson3/Lesson3";
+
+
+firebase.initializeApp({
+    apiKey: "AIzaSyCH1gQvL8F5pkDtkoMHtZZcJlm4AlHRjDs",
+    authDomain: "chat-react-4442e.firebaseapp.com",
+    projectId: "chat-react-4442e",
+    storageBucket: "chat-react-4442e.appspot.com",
+    messagingSenderId: "853863260020",
+    appId: "1:853863260020:web:7835663f5e322c8a6f1621",
+    measurementId: "G-J7VR6S1CP9"
+});
+
+export const AuthFirebaseContext = createContext(null);
+
+const auth = firebase.auth()
+const firestore = firebase.firestore()
 
 
 const Lesson3Router = () => {
 
-    const {auth} = useContext(AuthFirebaseContext);
-    const [user, loading, error] = useAuthState(auth)
-    if (loading) {
-        return <Preloader/>
-    }
-
-    return user ?
-        (
-            <div className={classes.lesson3}>
-                <NavbarLesson3/>
-                <div className={classes.lesson3__content}>
-
-
-                    <Routes>
-                        {privateRoutes.map(route =>
-                            <Route key={route.path} path={route.path} element={route.element}/>)}
-                    </Routes>
-                </div>
-            </div>
-        )
-        :
-        (
-            <div className={classes.lesson3}>
-                <NavbarLesson3/>
-                <div className={classes.lesson3__content}>
-                    <Routes>
-                        {publicRoutes.map(route =>
-                            <Route key={route.path} path={route.path} element={route.element}/>)}
-                    </Routes>
-                </div>
-            </div>
-        )
+    return (
+        <AuthFirebaseContext.Provider value={{
+            firebase,auth,firestore
+        }}>
+            <Lesson3/>
+        </AuthFirebaseContext.Provider>
+    );
 };
 
 export default Lesson3Router;

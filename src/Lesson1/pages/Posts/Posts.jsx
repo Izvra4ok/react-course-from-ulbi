@@ -4,14 +4,14 @@ import {usePosts} from "../../hooks/usePosts";
 import {useFetching} from "../../hooks/useFetching";
 import PostService from "../../DAL/api";
 import {getPagesCount} from "../../utils/pages";
-import PostForm from "../../components/UI/Post/PostForm";
-import MyButton from "../../components/UI/Button/MyButton";
-import MyModal from "../../components/UI/MyModal/MyModal";
-import PostFilter from "../../components/UI/Post/PostFilter";
-import Preloader from "../../components/UI/Preloader/Preloader";
-import PostList from "../../components/UI/Post/PostList";
+import PostForm from "../../components/Post/PostForm";
+import MyButton from "../../components/Button/MyButton";
+import MyModal from "../../components/MyModal/MyModal";
+import PostFilter from "../../components/Post/PostFilter";
+import Preloader from "../../components/Preloader/Preloader";
+import PostList from "../../components/Post/PostList";
 import {useObserver} from "../../hooks/useObserver";
-import MySelect from "../../components/UI/Select/MySelect";
+import MySelect from "../../components/Select/MySelect";
 
 const Posts = () => {
 
